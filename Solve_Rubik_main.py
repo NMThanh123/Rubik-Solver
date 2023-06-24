@@ -1,14 +1,3 @@
-####################################
-#                                  #
-#   Lớp : Sáng thứ 7               #
-#                                  #
-#   Họ và tên           MSSV       #
-#                                  #
-#   Nguyễn Hồng Nhân   20146381    #
-#   Nguyễn Minh Thành  20146422    #
-#   Trảo An Tân        20146416    #
-#                                  #
-####################################
 import cv2 
 import sys
 import time
@@ -919,42 +908,6 @@ def detect_face(bgr_image_input):
     face = np.array([0,0,0,0,0,0,0,0,0])
     if len(blob_colors) == 9:
         for i in range(9):
-            # if blob_colors[i][0] > 150 and blob_colors[i][1] > 180 and blob_colors[i][2] > 150:
-            #     blob_colors[i][3] = 1
-            #     face[i]=1
-            # if blob_colors[i][0] < 120 and blob_colors[i][1] < 150 and blob_colors[i][2] > 180:
-            #     blob_colors[i][3] = 2
-            #     face[i]=2
-            # if blob_colors[i][0] < 120 and blob_colors[i][1] > 150 and blob_colors[i][2] < 100:
-            #     blob_colors[i][3] = 3
-            #     face[i]=3
-            # if blob_colors[i][0] > 100 and blob_colors[i][1] > 50 and blob_colors[i][2] < 50:
-            #     blob_colors[i][3] = 4
-            #     face[i]=4
-            # if blob_colors[i][0] > 30 and blob_colors[i][1] > 180 and blob_colors[i][2] > 150 and np.abs(blob_colors[i][0]-blob_colors[i][2]) > 80:
-            #     blob_colors[i][3] = 5
-            #     face[i]=5
-            # if blob_colors[i][0] < 100 and blob_colors[i][1] < 100 and 100 < blob_colors[i][2] < 170  :
-            #     blob_colors[i][3] = 6
-            #     face[i]=6
-            # if blob_colors[i][0] > 150 and blob_colors[i][1] > 180 and blob_colors[i][2] > 150:
-            #     blob_colors[i][3] = 1
-            #     face[i]=1
-            # if blob_colors[i][0] < 120 and blob_colors[i][1] < 150 and blob_colors[i][2] > 180:
-            #     blob_colors[i][3] = 2
-            #     face[i]=2
-            # if blob_colors[i][0] < 120 and blob_colors[i][1] > 150 and blob_colors[i][2] < 100:
-            #     blob_colors[i][3] = 3
-            #     face[i]=3
-            # if blob_colors[i][0] > 100 and 150 > blob_colors[i][1] > 50 and blob_colors[i][2] < 80:
-            #     blob_colors[i][3] = 4
-            #     face[i]=4
-            # if blob_colors[i][0] > 30 and blob_colors[i][1] > 180 and blob_colors[i][2] > 150 and np.abs(blob_colors[i][0]-blob_colors[i][2]) > 50:
-            #     blob_colors[i][3] = 5
-            #     face[i]=5
-            # if blob_colors[i][0] < 120 and blob_colors[i][1] < 120 and 100<blob_colors[i][2] < 170  :
-            #     blob_colors[i][3] = 6
-            #     face[i]=6
             if blob_colors[i][0] > 150 and blob_colors[i][1] > 180 and blob_colors[i][2] > 10:
                 blob_colors[i][3] = 1
                 face[i]=1
