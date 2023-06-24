@@ -1,4 +1,4 @@
-# YOU CAN CHANGE RANGE COLOR HSV TO SUITABLE WITH YOUR LIGHT CONDITION IN LINE 62
+# YOU CAN CHANGE RANGE COLOR HSV WHICH IS SUITABLE WITH YOUR LIGHT CONDITION IN LINE 63
 import cv2 as cv
 import numpy as np
 
@@ -120,11 +120,8 @@ while cap.isOpened():
     cv.imshow("img", img)
     # cv.imshow("img", mask)
 
-
     if cv.waitKey(1) & 0xFF == ord('q') or cv.getWindowProperty('img', cv.WND_PROP_VISIBLE) < 1: 
             break
-
-
 
 cap.release()
 cv.destroyAllWindows()
